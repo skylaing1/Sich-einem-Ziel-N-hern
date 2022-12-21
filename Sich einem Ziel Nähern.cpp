@@ -10,10 +10,10 @@ using namespace std;
 int main()
 {
 	srand(time(NULL));
-	int entfernung = rand() % 6;
+	int entfernung = rand() % 6;                                  // Entfernung wird Festgelegt zufällig zwischen 0-5
 	cout << "Die Entfernung betraegt " << entfernung << " m.\n";
 
-	if (entfernung > 0)
+	if (entfernung > 0)                                           // Wenn größer als 0 dann wird 0-2 Meter gefahren. Wird 10x Wiederholt
 	{
 		int strecke = rand() % 3;
 		entfernung = entfernung - strecke;
@@ -104,10 +104,12 @@ int main()
 	}
 
 
-	if (entfernung <= 0) {
+	if (entfernung <= 0) {												// Wenn 0 oder weniger (-1) wird "Das Ziel wurde erreicht ausgegeben
 		cout << endl << endl << "Das Ziel wurde erreicht" << endl;
+	} else {															// Wenn Mehr als 10 Schritte gefahren werden müssen wird ein Error ausgegeben
+		cout << endl << endl << "Error: Zu viele Schritte";
 	}
-
+	 
 	
 
 }
