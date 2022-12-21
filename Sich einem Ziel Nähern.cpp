@@ -12,6 +12,7 @@ int main()
 	srand(time(NULL));
 	int entfernung = rand() % 6;
 	cout << "Die Entfernung betraegt " << entfernung << " m.\n";
+
 	if (entfernung > 0)
 	{
 		int strecke = rand() % 3;
@@ -66,8 +67,45 @@ int main()
 
 	}
 
+	if (entfernung > 0)
+	{
+		int strecke = rand() % 3;
+		entfernung = entfernung - strecke;
+		cout << endl << endl << "Das Auto faehrt " << strecke << " Meter" << endl << endl;
+		cout << "Noch " << entfernung << " bis zum Ziel";
+
+	}
+
+	if (entfernung > 0)
+	{
+		int strecke = rand() % 3;
+		entfernung = entfernung - strecke;
+		cout << endl << endl << "Das Auto faehrt " << strecke << " Meter" << endl << endl;
+		cout << "Noch " << entfernung << " bis zum Ziel";
+
+	}
+
+	if (entfernung > 0)
+	{
+		int strecke = rand() % 3;
+		entfernung = entfernung - strecke;
+		cout << endl << endl << "Das Auto faehrt " << strecke << " Meter" << endl << endl;
+		cout << "Noch " << entfernung << " bis zum Ziel";
+
+	}
+
+	if (entfernung > 0)
+	{
+		int strecke = rand() % 3;
+		entfernung = entfernung - strecke;
+		cout << endl << endl << "Das Auto faehrt " << strecke << " Meter" << endl << endl;
+		cout << "Noch " << entfernung << " bis zum Ziel";
+
+	}
+
+
 	if (entfernung <= 0) {
-		cout << endl << endl << "Das Ziel wurde erreicht";
+		cout << endl << endl << "Das Ziel wurde erreicht" << endl;
 	}
 
 	
